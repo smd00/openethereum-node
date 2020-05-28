@@ -2,13 +2,13 @@
 
 # =============================================
 # Usage:
-# curl -O https://brighteyetea.com/crypto/eth/delete.sh
-# sudo chmod +x ./delete.sh && ./delete.sh
+# curl -O https://raw.githubusercontent.com/smd00/openethereum-node/master/delete.sh && sudo chmod +x ./delete.sh && ./delete.sh
 # =============================================
 
 echo "# START -----------------------------------------------------------------"
 echo "# DM    Delete folders and files"
 echo "# END   -----------------------------------------------------------------"
+sudo systemctl stop openethereum
 sudo rm -r $HOME/eth/
 sudo rm -r $HOME/.local/share/
 sudo rm -r /dmdata/*
