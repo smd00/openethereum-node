@@ -2,8 +2,7 @@
 
 # =============================================
 # Usage:
-# curl -O https://raw.githubusercontent.com/smd00/openethereum-node/master/delete.sh
-# sudo chmod +x ./delete.sh && ./delete.sh
+# curl -O https://raw.githubusercontent.com/smd00/openethereum-node/master/delete.sh && sudo chmod +x ./delete.sh && ./delete.sh
 # =============================================
 
 echo "# START -----------------------------------------------------------------"
