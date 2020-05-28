@@ -2,7 +2,7 @@
 
 # =============================================
 # Usage:
-# curl -O https://brighteyetea.com/crypto/eth/delete.sh
+# curl -O https://raw.githubusercontent.com/smd00/openethereum-node/master/delete.sh
 # sudo chmod +x ./delete.sh && ./delete.sh
 # =============================================
 
