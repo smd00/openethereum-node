@@ -8,6 +8,7 @@
 echo "# START -----------------------------------------------------------------"
 echo "# DM    Delete folders and files"
 echo "# END   -----------------------------------------------------------------"
+sudo systemctl stop openethereum
 sudo rm -r $HOME/eth/
 sudo rm -r $HOME/.local/share/
 sudo rm -r /dmdata/*
