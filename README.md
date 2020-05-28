@@ -21,6 +21,11 @@ https://medium.com/@danielmontoyahd/cheat-sheet-parity-and-bitcoin-core-c370163f
 
     - Recommended instance type: t2.medium
 
-    - Add additional storage volume (sdb): 500 GB
+    - Advanced Details > User data (Boot strap script):
 
-2. SSH to the instance and run the above command.
+    ```
+    #!/bin/bash
+    mkdir $HOME/eth && cd $HOME/eth && curl -O https://raw.githubusercontent.com/smd00/openethereum-node/master/setup.sh && sudo chmod +x ./setup.sh && ./setup.sh
+    ```
+
+    - Add additional storage volume (sdb): 500 GB
