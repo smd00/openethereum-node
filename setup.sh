@@ -64,16 +64,16 @@ sudo apt-get install build-essential cmake libudev-dev -y
 echo "# START -----------------------------------------------------------------"
 echo "# DM    Build OpenEthereum from Source Code"
 echo "# END   -----------------------------------------------------------------"
-wget https://github.com/openethereum/openethereum/releases/download/v3.0.0/openethereum-linux-v3.0.0.zip
+wget https://github.com/openethereum/openethereum/releases/download/v3.0.1/openethereum-linux-v3.0.1.zip
 
 sudo apt-get install unzip -y
 
-unzip openethereum-linux-v3.0.0.zip -d $HOME/eth/openethereum-linux-v3.0.0
+unzip openethereum-linux-v3.0.1.zip -d $HOME/eth/openethereum-v3
 
-chmod +x $HOME/eth/openethereum-linux-v3.0.0/openethereum
-# chmod u+x $HOME/eth/openethereum-linux-v3.0.0/openethereum
+chmod +x $HOME/eth/openethereum-v3/openethereum
+# chmod u+x $HOME/eth/openethereum-v3/openethereum
 
-# cd $HOME/eth/openethereum-linux-v3.0.0/
+# cd $HOME/eth/openethereum-v3/
 # sudo ./openethereum
 # ./target/release/openethereum
 
@@ -87,7 +87,7 @@ cat $HOME/eth/config.toml | sudo tee $HOME/.local/share/io.parity.ethereum/confi
 
 sudo chmod +x /etc/systemd/system/openethereum.service
 
-sudo install $HOME/eth/openethereum-linux-v3.0.0/openethereum /usr/bin/openethereum
+sudo install $HOME/eth/openethereum-v3/openethereum /usr/bin/openethereum
 
 sudo chown -R ubuntu:ubuntu /dmdata
 
