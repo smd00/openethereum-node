@@ -29,3 +29,6 @@ https://medium.com/@danielmontoyahd/cheat-sheet-parity-and-bitcoin-core-c370163f
     ```
 
     - Add additional storage volume (sdb): 500 GB
+
+## Configuring Parity Ethereum (see /examples/ folder)
+https://openethereum.wiki/Configuring-Parity-Ethereum/
