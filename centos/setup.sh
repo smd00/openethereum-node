@@ -5,7 +5,7 @@
 # Website: montoya.com.au
 
 # Usage:
-# mkdir $HOME/eth && cd $HOME/eth && curl -O https://raw.githubusercontent.com/smd00/openethereum-node/master/setup-centos.sh && sudo chmod +x ./setup-centos.sh && ./setup-centos.sh
+# mkdir $HOME/eth && cd $HOME/eth && curl -O https://raw.githubusercontent.com/smd00/openethereum-node/master/centos/setup.sh && sudo chmod +x ./setup.sh && ./setup.sh
 
 # =============================================
 # Download dependencies
@@ -85,7 +85,7 @@ sudo chmod +x /etc/systemd/system/openethereum.service
 
 sudo install $HOME/eth/openethereum-v3/openethereum /usr/bin/openethereum
 
-sudo chown -R ubuntu:ubuntu /dmdata
+sudo chown -R ec2-user:ec2-user /dmdata
 
 echo "# START -----------------------------------------------------------------"
 echo "# DM    Enable and start openethereum"
