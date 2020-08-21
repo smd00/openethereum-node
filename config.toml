@@ -23,6 +23,8 @@ path = "/dmdata/io.parity.ethereum/jsonrpc.ipc"
 path = "/dmdata/io.parity.ethereum/secretstore"
 
 [misc]
+# Logging pattern (`<module>=<level>`, e.g. `own_tx=trace`).
+#logging = "debug"
 # Logs will be stored at /dmdata/dm-parity.log.
 log_file = "/dmdata/dm-parity.log"
 
