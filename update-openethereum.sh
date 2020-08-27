@@ -7,10 +7,13 @@
 # Script to update from parity to openethereum
 
 # Usage:
-# cd $HOME/eth && curl -O https://raw.githubusercontent.com/smd00/openethereum-node/master/update-openethereum.sh && sudo chmod +x ./update-openethereum.sh && ./update-openethereum.sh
+# mkdir $HOME/eth && cd $HOME/eth && curl -O https://raw.githubusercontent.com/smd00/openethereum-node/master/update-openethereum.sh && sudo chmod +x ./update-openethereum.sh && ./update-openethereum.sh
 
 # ============================================= 
 # Stop Parity
+echo "# START -----------------------------------------------------------------"
+echo "# DM    stop Parity"
+echo "# END   -----------------------------------------------------------------"
 sudo systemctl stop parity
 
 # =============================================
